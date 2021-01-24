@@ -7,16 +7,21 @@ Install SkiROS2 accoriding to instructions found at https://github.com/RVMI/skir
 Overwrite original launch-file found in .../catkin_ws/src/skiros2/skiros2/launch with the file in this repository found in the folder "To_launch_folder"
 
 Add the folder "Skills" to .../catkin_ws/src
+
 Update "sys.path.append" paths in primitives.py and skills.py, found in skills/skills_dorna2/src/skills_dorna2/
 
 Add the folder "dorna2" to .../catkin_ws
 
 Set up simulation with bridge in separate VM
 
-Launch (according to SkiROS2 instructions found at https://github.com/RVMI/skiros2)
+Launch (according to SkiROS2 instructions found at https://github.com/RVMI/skiros2):
+
 cd catkin_ws
+
 catkin_make
+
 source ./devel/setup.bash
+
 roslaunch skiros2 skiros.launch
 
 Note:
