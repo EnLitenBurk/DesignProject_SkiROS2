@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.inf.ufrgs.br/phi-group/ontologies/sumo.owl" uri="file:/home/johansson/catkin_ws/src/skiros2/skiros2/owl/IEEE-1872-2015/sumo.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.inf.ufrgs.br/phi-group/ontologies/coraX.owl" uri="file:/home/johansson/catkin_ws/src/skiros2/skiros2/owl/IEEE-1872-2015/coraX.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.inf.ufrgs.br/phi-group/ontologies/cora.owl" uri="file:/home/johansson/catkin_ws/src/skiros2/skiros2/owl/IEEE-1872-2015/cora.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.inf.ufrgs.br/phi-group/ontologies/RParts.owl" uri="file:/home/johansson/catkin_ws/src/skiros2/skiros2/owl/IEEE-1872-2015/RParts.owl"/>
+    <uri id="User Entered Import Resolution" name="http://rvmi.aau.dk/ontologies/skiros.owl" uri="file:/home/johansson/catkin_ws/src/skiros2/skiros2/owl/skiros.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1609931378692" name="http://www.semanticweb.org/johansson/ontologies/2020/11/test_name" uri="owl_name.owl"/>
+    </group>
+</catalog>

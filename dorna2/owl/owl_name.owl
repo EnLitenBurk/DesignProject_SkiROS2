@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/johansson/ontologies/2020/11/test_name#"
+     xml:base="http://www.semanticweb.org/johansson/ontologies/2020/11/test_name"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skiros="http://rvmi.aau.dk/ontologies/skiros.owl#"
+     xmlns:owl_name="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name">
+        <owl:imports rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl"/>
+        <owl:imports rdf:resource="http://www.inf.ufrgs.br/phi-group/ontologies/RParts.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#blue_light -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#blue_light">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cam_done_scanning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cam_done_scanning">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cam_scanning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cam_scanning">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cube_sensor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#cube_sensor">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#PhysicalObjectProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#gripper_closed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#gripper_closed">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#gripper_part_sensor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#gripper_part_sensor">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#r1_act_pos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#r1_act_pos">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#r3_act_pos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#r3_act_pos">
+        <rdfs:subPropertyOf rdf:resource="http://rvmi.aau.dk/ontologies/skiros.owl#TransformationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#robot_name -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johansson/ontologies/2020/11/owl_name#robot_name">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/phi-group/ontologies/cora.owl#Robot"/>
+        <skiros:DiscreteReasoner>AauSpatialReasoner</skiros:DiscreteReasoner>
+        <skiros:SkillMgr>/robot_name</skiros:SkillMgr>
+        <owl_name:blue_light rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:blue_light>
+        <owl_name:cam_done_scanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:cam_done_scanning>
+        <owl_name:cam_scanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:cam_scanning>
+        <owl_name:cube_sensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:cube_sensor>
+        <owl_name:gripper_closed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:gripper_closed>
+        <owl_name:gripper_part_sensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl_name:gripper_part_sensor>
+        <owl_name:r1_act_pos>unknown</owl_name:r1_act_pos>
+        <owl_name:r3_act_pos>unknown</owl_name:r3_act_pos>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

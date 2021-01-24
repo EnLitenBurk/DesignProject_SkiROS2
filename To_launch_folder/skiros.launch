@@ -1,0 +1,43 @@
+<launch>
+<arg name="libraries_list" default="[]"/>
+  <arg name="skill_list" default="[listen, r3_PRE_TAKE, r3_TAKE1, r3_TAKE2, r3_TAKE3, r3_LEAVE, r1_PRE_TAKE, r1_TAKE1, r1_TAKE2, r1_TAKE3, r1_LEAVE, r1_SCAN, GEN_cube, DEL_cube, task_plan, drop_off, OPEN_gripper, CLOSE_gripper, scan_cube, SCAN,light_and_update]"/>
+  <arg name="robot_ontology_prefix" default="skiros" />
+  <arg name="robot_name" default="test_robot" />
+  <arg name="deploy" default="true" />
+  <arg name="gui" default="true"/>
+  <arg name="verbose" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="workspace_dir" default="$(find skiros2)/owl"/>
+  <arg name="init_scene" default=""/>
+  <arg name="skill_mgr_on" default="true"/>
+  <arg name="task_mgr_on" default="true"/>
+  
+  <node name="map2world" type="static_transform_publisher" pkg="tf" args="0 0 0 0 0 0 1 map world 100" />
+  
+  <include file="$(find skiros2)/launch/world_model_server.launch">
+      <arg name="init_scene" value=""/>
+      <arg name="verbose" value="false"/>
+      <arg name="gui" value="true"/>
+      <arg name="reasoners_pkgs" value="[skiros2_std_reasoners]"/>
+      <arg name="workspace_dir" value="/home/johansson/catkin_ws/dorna2/owl"/>
+      <arg name="debug" value="$(arg debug)"/>
+      <arg name="deploy" value="$(arg deploy)"/>
+  </include>
+
+  <include file="$(find skiros2)/launch/skill_mgr.launch">
+      <arg name="verbose" value="false"/>
+      <arg name="debug" value="$(arg debug)"/>
+      <arg name="libraries_list" value="[skills_dorna2, skiros2_std_skills]"/>
+      <arg name="skill_list" value="$(arg skill_list)" />
+      <arg name="robot_ontology_prefix" value="owl_name"/>
+      <arg name="robot_name" value="robot_name"/>
+      <arg name="deploy" value="$(arg deploy)"/>
+  </include>
+  
+  
+  
+    <include if="$(arg task_mgr_on)" file="$(find skiros2)/launch/task_mgr.launch">
+      <arg name="deploy" value="$(arg deploy)"/>
+  </include>
+</launch>
+
